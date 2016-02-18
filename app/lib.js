@@ -1,19 +1,17 @@
 var app = app || {};
 
-app.requestAnimFrame = function() {
+var requestAnimFrame = (function() {
 	var fps = 60;
 
-	return (
-		window.requestAnimationFrame ||
-		window.webkitRequestAnimationFrame ||
-		window.mozRequestAnimationFrame ||
-		window.oRequestAnimationFrame ||
-		window.msRequestAnimationFrame ||
-		function(callback) {
-			window.setTimeout(callback, 1000 / fps);
-		}
-	);
-}();
+	return  window.requestAnimationFrame ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame ||
+			window.oRequestAnimationFrame ||
+			window.msRequestAnimationFrame ||
+			function(callback) {
+			   window.setTimeout(callback, 1000 / fps);
+			};
+})();
 
 app.lib = (function() {
 
@@ -87,7 +85,7 @@ app.lib = (function() {
 		me.userUpdateFunc(me);
 		me.frame++;
 
-		app.requestAnimFrame(function() {
+		requestAnimFrame(function() {
 			animate.call(me);
 		});
 	}
