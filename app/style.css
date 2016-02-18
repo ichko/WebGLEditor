@@ -1,0 +1,39 @@
+*{padding: 0; margin: 0;font-family: arial;-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none; user-select: none;border: 0;outline: none;}
+body, html, .wrapper{height: 100%; overflow: hidden;}
+
+.title{
+	color: #ee3399;
+	padding: 5px 8px;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+#cretableHolder{width: 100%;position: fixed;top: 0px;left: 250px;background: #222;}
+.creatableItem{text-transform: uppercase;float: left;padding: 8px;margin: 1px 0.5px;background: #333;
+	font-size: 8pt;font-weight: bold;color: #eee;cursor: pointer;}
+.creatableItem:hover{background: #444;}
+.creatableItem:active{background: #ffcc00;color: #111;}
+
+.leftMenu{background: #333;width: 250px;height: 100%;position: fixed;top 0;left: 0;}
+.leftMenu .topMenu, .leftMenu .bottomMenu{height: 50%;width: 100%;background: #232323;overflow: auto;}
+.leftMenu .bottomMenu{background: #333;}
+
+.leftMenu #sceneHolder .item span{font-size: 7pt;font-weight: bold;float: right;color: #777;padding: 2px;}
+.leftMenu #sceneHolder .item{
+	background: #444;
+	cursor: pointer;
+	padding: 5px;
+	margin: 1px 1px 1px 5px;
+	font-size: 9pt;
+	color: #c9c9c9;
+}
+.leftMenu #sceneHolder .item:hover{background: #555;}
+.leftMenu #sceneHolder .item.active{background: #ffcc00;color: #000;font-weight: bold;}
+.leftMenu #sceneHolder .item.active span{color: #333;}
+
+.proprs{background: #444;margin: 1px 1px 5px 5px;padding: 5px;}
+.btn{cursor: pointer;font-size: 8pt;color: #ccc;padding: 5px;background: #333;margin-top: 5px;display: inline-block;}
+.popName{font-size: 8pt;font-weight: bold;color: #ccc;display: inline-block;width: 70px;position: relative;top: 5px;left: 5px;}
+.input[type="text"] {width: 120px;background: #222;color: #999;padding: 4px;}
+.editableGroup{background: #333;padding: 3px;margin: 2px;display: inline-block;}
+#cameraPosition{font-size: 8pt;font-weight: bold;position: fixed;top: 0;right: 0;z-index: 10;padding: 8px;color: #999;}
