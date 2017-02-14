@@ -42,5 +42,8 @@ app.lib.init(function init(lib){
 
 # Screenshots
 
+Dinosaurs example
 ![dinosaurs](assets/example.png)
+
+Example with simple primitive objects
 ![example](assets/example_2.png)
