@@ -4,7 +4,7 @@
 ### Links
 Double click the scene to enter in free flying mode (Esc for exit).
  - [Empty scene demo](https://rawgit.com/ichko/WebGLEditor/master/index.html)
- - [Dinosaurs example demo](https://rawgit.com/ichko/WebGLEditor/master/example.html)
+ - Dinosaurs example demo (clone the repo and run it it lite-server for example (rawgit raises cross-origin issues))
 
 # Example code
 ```javascript
@@ -38,7 +38,7 @@ app.lib.init(function init(lib){
  - Pyramid
  - Sphere
  - Torus
- - Obj file
+ - Obj file (JSON)
 
 # Screenshots
 
