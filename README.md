@@ -1,5 +1,10 @@
-#WebGL#
-Webgl editor experiment
+#Webgl editor#
+3d editor on the web
+
+### Links
+Double click the scene to enter in free flying mode (Esc for exit).
+ - [Empty scene demo](https://rawgit.com/ichko/WebGLEditor/master/index.html)
+ - [Dinosaurs example demo](https://rawgit.com/ichko/WebGLEditor/master/example.html)
 
 # Example code
 ```javascript
@@ -34,3 +39,8 @@ app.lib.init(function init(lib){
  - Sphere
  - Torus
  - Obj file
+
+# Screenshots
+
+![dinosaurs](assets/example.png)
+![example](assets/example_2.png)
