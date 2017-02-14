@@ -23,7 +23,7 @@ app.pyramid = (function(){
 			this.data.push(Math.cos(a),Math.sin(a),0,N[0],N[1],0, 0,0);
 			this.data.push(Math.cos(a+dA),Math.sin(a+dA),0,N[0],N[1],0, 0,0);
 			a += dA;
-		}																						
+		}
 	}
 
 	pyramid.prototype = app.drawable;

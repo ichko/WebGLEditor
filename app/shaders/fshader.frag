@@ -42,13 +42,10 @@ void main(){
 
 	vec3 reflectedLight = normalize(reflect(light, normalize(vNorm)));
 
-	// в локалната координатна система "окото" на гледащия е в (0,0,0),
-	// а векторът от точката до "окото" е pos-(0,0,0) = pos
 	vec3 viewDir = normalize(viewDirection);
 
 	vec4 texCol = texture2D(uTxtSampler, vST);
 
-	// готови сме да сметнем лъскавината
 	float cosa = max(dot(reflectedLight,viewDir), 0.0);
 	vec3 specularColor = vec3(pow(cosa,10.))*0.5;
 	vec3 diffuseColor = vColor*max(dot(normal, light), -0.5);
