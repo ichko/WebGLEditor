@@ -1,4 +1,4 @@
-#Webgl editor#
+# Webgl editor
 3d editor on the web
 
 ### Links
